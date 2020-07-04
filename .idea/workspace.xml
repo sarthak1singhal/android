@@ -9,7 +9,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc9fc33f-baf4-4ad6-83f9-90540c716830" name="Default Changelist" comment="" />
+    <list default="true" id="fc9fc33f-baf4-4ad6-83f9-90540c716830" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTic.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app.aab" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+            <state relative-caret-position="65">
+              <caret line="879" selection-start-line="879" selection-end-line="879" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8917#9093#0" expanded="true" />
@@ -133,38 +138,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="203" column="8" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="8" />
+            <state relative-caret-position="134">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#14397#14398#0" expanded="true" />
                 <element signature="e#14445#14446#0" expanded="true" />
                 <element signature="e#20645#20646#0" expanded="true" />
                 <element signature="e#20705#20706#0" expanded="true" />
-                <element signature="e#21841#21842#0" expanded="true" />
-                <element signature="e#21876#21877#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_F.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="343" column="28" selection-start-line="343" selection-start-column="28" selection-end-line="343" selection-end-column="28" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="340">
+              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+              <folding>
+                <element signature="e#19531#19532#0" expanded="true" />
+                <element signature="e#19566#19567#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,15 +180,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/Watch_Videos_Adapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -245,6 +233,9 @@
     <option name="KEY_ALIAS" value="key0" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -269,7 +260,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/VideoFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/TicTic.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/SaveVideoBg.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_F.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_watch_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -291,6 +281,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/Variables.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_F.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java" />
       </list>
     </option>
@@ -300,6 +291,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages AndroidView="false" />
@@ -366,154 +358,13 @@
             <path>
               <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Discover" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
-              <item name="Liked_Videos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
-              <item name="UserVideos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleClasses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Video_Recording" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="VideoAction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="WatchVideos" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -535,6 +386,7 @@
   <component name="PropertiesComponent">
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.BuildVariants" value="release" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../codecanyon-czVUxcoT-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app 3 july/Android source code/TicTic/TicTic" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
@@ -678,8 +530,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.63076925" visible="true" weight="0.24813233" />
+      <window_info id="Structure" order="2" sideWeight="0.36923078" side_tool="true" weight="0.24813233" />
+      <window_info id="Build Variants" order="3" sideWeight="0.36923078" side_tool="true" weight="0.24813233" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" weight="0.32977587" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" sideWeight="0.13900709" side_tool="true" weight="0.25026682" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4967983" weight="0.35738832" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.4662085" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.42955327" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.40320733" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3298969" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.4994664" visible="true" weight="0.3306544" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5032017" side_tool="true" weight="0.19243987" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49786553" weight="0.03436426" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49252936" weight="0.419244" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.32977587" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.31056562" />
+      <window_info anchor="right" id="Flutter Outline" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Flutter Performance" order="7" />
+      <window_info anchor="right" id="Device File Explorer" order="8" weight="0.32977587" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.63076925" visible="true" weight="0.24813233" />
       <window_info id="Structure" order="2" sideWeight="0.36923078" side_tool="true" weight="0.24813233" />
@@ -698,37 +579,7 @@
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5032017" side_tool="true" weight="0.19243987" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49786553" weight="0.03436426" />
-      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49252936" visible="true" weight="0.17869416" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Gradle" order="1" weight="0.32977587" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Flutter Inspector" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.31056562" />
-      <window_info anchor="right" id="Flutter Outline" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Flutter Performance" order="7" />
-      <window_info anchor="right" id="Device File Explorer" order="8" weight="0.32977587" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8609929" visible="true" weight="0.24813233" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Designer" order="5" />
-      <window_info id="Resources Explorer" order="6" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Favorites" order="8" sideWeight="0.13900709" side_tool="true" weight="0.25026682" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4967983" weight="0.35738832" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.48224512" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.42955327" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" weight="0.40320733" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.3298969" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.4994664" weight="0.3298969" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5032017" side_tool="true" weight="0.19243987" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49786553" visible="true" weight="0.32187858" />
-      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49252936" weight="0.2737686" />
+      <window_info active="true" anchor="bottom" id="Debug" order="9" sideWeight="0.49252936" visible="true" weight="0.03436426" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.32977587" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -803,20 +654,22 @@
           <properties />
           <option name="timeStamp" value="157" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_F.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java</url>
+          <line>879</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/289e601749041641f7c8f3dd355bef77/jars/classes.jar!/com/wonderkiln/camerakit/CameraView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="315" column="41" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2805">
@@ -1108,17 +961,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="198">
+          <caret line="1071" column="48" selection-start-line="1071" selection-start-column="48" selection-end-line="1071" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="122" column="48" lean-forward="true" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="343" column="28" selection-start-line="343" selection-start-column="28" selection-end-line="343" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile_tab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        <state relative-caret-position="65">
+          <caret line="879" selection-start-line="879" selection-end-line="879" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8917#9093#0" expanded="true" />
@@ -1135,35 +1014,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="343" column="28" selection-start-line="343" selection-start-column="28" selection-end-line="343" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="1071" column="48" selection-start-line="1071" selection-start-column="48" selection-end-line="1071" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="203" column="8" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="8" />
+        <state relative-caret-position="134">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="e#14397#14398#0" expanded="true" />
             <element signature="e#14445#14446#0" expanded="true" />
             <element signature="e#20645#20646#0" expanded="true" />
             <element signature="e#20705#20706#0" expanded="true" />
-            <element signature="e#21841#21842#0" expanded="true" />
-            <element signature="e#21876#21877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_F.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="e#19531#19532#0" expanded="true" />
+            <element signature="e#19566#19567#0" expanded="true" />
           </folding>
         </state>
       </provider>
