@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f481ad0fccb939102d02d2c2ec619470/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70d511614eaae743249db5c5aae1bc84/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f481ad0fccb939102d02d2c2ec619470/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f481ad0fccb939102d02d2c2ec619470/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70d511614eaae743249db5c5aae1bc84/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70d511614eaae743249db5c5aae1bc84/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -361,50 +361,6 @@ public class Video_Recoder_A extends AppCompatActivity implements View.OnClickLi
                 try {
 
 
-/*
-                    ArrayList<EpVideo> epVideos =  new  ArrayList<>();
-                    for (int i=0;i<video_list.size();i++) {
-                        epVideos.add(new EpVideo (video_list.get(i))); // Video 1
-
-                    }
-                    String fileOutput=null;
-                    if(audio!=null){
-                        fileOutput=Variables.outputfile;
-                    }else {
-                        fileOutput=Variables.outputfile2;
-                    }                     EpEditor. OutputOption outputOption =new EpEditor.OutputOption(fileOutput);
-                    outputOption.setWidth(720);
-                    outputOption.setHeight(1280);
-                    outputOption.frameRate = 25 ;
-                    outputOption.bitRate = 10 ;
-                    EpEditor.merge(epVideos, outputOption, new  OnEditorListener() {
-                        @Override
-                        public  void  onSuccess () {
-                            Log.d("Status","Success");
-
-                            progressDialog.dismiss();
-                            if(audio!=null)
-                                Merge_withAudio();
-                            else {
-                                Go_To_preview_Activity();
-                            }
-                        }
-
-                        @Override
-                        public  void  onFailure () {
-
-                        }
-
-                        @Override
-                        public  void  onProgress ( float  progress ) {
-                            // Get processing progress here
-                            Log.d("Progress",""+progress);
-
-                        }
-                    });
-
-*/
-
 
 
 

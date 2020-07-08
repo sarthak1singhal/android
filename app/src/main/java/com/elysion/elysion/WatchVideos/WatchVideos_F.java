@@ -679,7 +679,6 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
 
 
 
-
         final RelativeLayout mainlayout = layout.findViewById(R.id.mainlayout);
         playerView.setOnTouchListener(new View.OnTouchListener() {
             private GestureDetector gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
@@ -733,10 +732,8 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                     }
 
                     if(Variables.sharedPreferences.getBoolean(Variables.islogin,false)) {
-
                         Show_heart_on_DoubleTap(item, mainlayout, e);
                         Like_Video(currentPage, item);
-
                     }else {
                         Toast.makeText(context, "Please Login into ", Toast.LENGTH_SHORT).show();
                     }
@@ -1039,7 +1036,7 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
     CharSequence[] options;
     private void Show_video_option(final Home_Get_Set home_get_set) {
 
-         options = new CharSequence[]{ "Save Video","Report", "I don't like this", "Cancel" };
+         options = new CharSequence[]{ "Save Video","Report", "I don't like it", "Cancel" };
 
          if(home_get_set.fb_id.equals(Variables.sharedPreferences.getString(Variables.u_id,"")))
         options = new CharSequence[]{"Save Video", "Delete Video", "Cancel"};
@@ -1100,64 +1097,53 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                     dialog.dismiss();
                     ShowReport(home_get_set);
 
-                }else if (options[item].equals("I don't like this")){
-
-
+                }else if (options[item].equals("I don't like it")){
 
 
                     Date c = Calendar.getInstance().getTime();
                     System.out.println("Current time => " + c);
-
                     SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
                     String formattedDate = df.format(c);
-
                     SharedPreferences s = PreferenceManager.getDefaultSharedPreferences(context) ;
-
                     String getDate = s.getString("date","");
                     int count = s.getInt("unlike",0);
-
                     if(getDate.equals(formattedDate)  )
                     {
                         if(count>7)
                         {
-
                             Toast.makeText(context,"Try again after sometime", Toast.LENGTH_SHORT).show();
                         }else{
-
                             SharedPreferences.Editor e = s.edit();
-
                             report(item,home_get_set);
                             e.putString("date", formattedDate).apply();
                             count++;
                             e.putInt("unlike",count);
                             e.apply();
                         }
-                    }else{
-
+                    }
+                    else
+                        {
                         report(item,home_get_set);
                         SharedPreferences.Editor e = s.edit();
-
                         e.putString("date", formattedDate).apply();
                         count=0;
                         e.putInt("unlike",count);
                         e.apply();
                     }
-
-
-
                 }
-
-
             }
-
         });
-
         builder.show();
 
     }
 
 
     void report(int item, Home_Get_Set home_get_set){
+        if(adapter.getItemCount()>currentPage+1)
+            recyclerView.smoothScrollToPosition(currentPage+1);
+
+
+
 
         String action = options[item].toString();
         Functions.Call_Api_For_report_video(WatchVideos_F.this, home_get_set.video_id, action,new API_CallBack() {
@@ -1173,8 +1159,7 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                 recyclerView.post(new Runnable() {
                     @Override
                     public void run() {
-                        recyclerView.smoothScrollToPosition(adapter.getItemCount() - 1);
-                        Toast. makeText(getApplicationContext(),"Video reported",Toast. LENGTH_SHORT).show();
+                         Toast. makeText(getApplicationContext(),"Video reported",Toast. LENGTH_SHORT).show();
 
 
 
@@ -1221,6 +1206,45 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
 
                 }else{
                     String action = options[item].toString();
+
+                    Date c = Calendar.getInstance().getTime();
+                    System.out.println("Current time => " + c);
+
+                    SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                    String formattedDate = df.format(c);
+
+                    SharedPreferences s = PreferenceManager.getDefaultSharedPreferences(context) ;
+
+                    String getDate = s.getString("date","");
+                    int count = s.getInt("report",0);
+
+                    if(getDate.equals(formattedDate)  )
+                    {
+                        if(count>7)
+                        {
+
+                            Toast.makeText(context,"Try again after sometime", Toast.LENGTH_SHORT).show();
+                            return;
+                        }else{
+
+                            SharedPreferences.Editor e = s.edit();
+
+                            e.putString("date", formattedDate).apply();
+                            count++;
+                            e.putInt("report",count);
+                            e.apply();
+                        }
+                    }else{
+
+                        SharedPreferences.Editor e = s.edit();
+
+                        e.putString("date", formattedDate).apply();
+                        count=0;
+                        e.putInt("report",count);
+                        e.apply();
+                    }
+                    if(adapter.getItemCount()>currentPage+1)
+                        recyclerView.smoothScrollToPosition(currentPage+1);
                     Functions.Call_Api_For_report_video(WatchVideos_F.this, home_get_set.video_id, action,new API_CallBack() {
 
                         @Override
@@ -1234,8 +1258,7 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                             recyclerView.post(new Runnable() {
                                 @Override
                                 public void run() {
-                                    recyclerView.smoothScrollToPosition(adapter.getItemCount() - 1);
-                                    Toast. makeText(getApplicationContext(),"Video reported",Toast. LENGTH_SHORT).show();
+                                     Toast. makeText(getApplicationContext(),"Video reported",Toast. LENGTH_SHORT).show();
                                 }
                             });
 

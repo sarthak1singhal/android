@@ -120,6 +120,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 import static com.facebook.FacebookSdk.getApplicationContext;
 
@@ -135,7 +136,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
 
     RecyclerView recyclerView;
-    ArrayList<Home_Get_Set> data_list;
+    ArrayList<Home_Get_Set> data_list =new ArrayList<>();;
     int currentPage=-1;
     LinearLayoutManager layoutManager;
 
@@ -187,9 +188,10 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
                  final int scrollOffset = recyclerView.computeVerticalScrollOffset();
                   final int height = recyclerView.getHeight();
                 int page_no=scrollOffset / height;
-                if (dy<4 && dy>0)
-                    OpenProfile(data_list.get(page_no),true);
-               else   if(page_no!=currentPage ){
+              //  if (dy<4 && dy>0)
+                 //   OpenProfile(data_list.get(page_no),true);
+               //else
+                   if(page_no!=currentPage ){
                     currentPage=page_no;
 
                     Release_Privious_Player();
@@ -359,7 +361,6 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
     private void Call_Api_For_get_Allvideos() {
 
 
-        Log.d(Variables.tag, MainMenuActivity.token);
 
         JSONObject parameters = new JSONObject();
         try {
@@ -381,10 +382,16 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
 
     }
+    HashMap<String,String> map=new HashMap<String, String>();//Creating HashMap
 
     public void Parse_data(String responce){
 
-        data_list=new ArrayList<>();
+        int isAdapter = 0;
+        if(data_list.size()!=0)
+        {
+            isAdapter = 1;
+        }
+//        data_list=new ArrayList<>();
 
         try {
             JSONObject jsonObject=new JSONObject(responce);
@@ -393,44 +400,55 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
                 JSONArray msgArray=jsonObject.getJSONArray("msg");
                 for (int i=0;i<msgArray.length();i++) {
                     JSONObject itemdata = msgArray.optJSONObject(i);
-                    Home_Get_Set item=new Home_Get_Set();
-                    item.fb_id=itemdata.optString("fb_id");
-
-                    JSONObject user_info=itemdata.optJSONObject("user_info");
-
-                    item.username=user_info.optString("username");
-                    item.first_name=user_info.optString("first_name",context.getResources().getString(R.string.app_name));
-                    item.last_name=user_info.optString("last_name","User");
-                    item.profile_pic=user_info.optString("profile_pic","null");
-                    item.verified=user_info.optString("verified");
-
-                    JSONObject sound_data=itemdata.optJSONObject("sound");
-                    item.sound_id=sound_data.optString("id");
-                    item.sound_name=sound_data.optString("sound_name");
-                    item.sound_pic=sound_data.optString("thum");
+                    Home_Get_Set item = new Home_Get_Set();
+                    item.fb_id = itemdata.optString("fb_id");
 
 
+                    JSONObject user_info = itemdata.optJSONObject("user_info");
 
-                    JSONObject count=itemdata.optJSONObject("count");
-                    item.like_count=count.optString("like_count");
-                    item.video_comment_count=count.optString("video_comment_count");
+                    item.username = user_info.optString("username");
+                    item.first_name = user_info.optString("first_name", context.getResources().getString(R.string.app_name));
+                    item.last_name = user_info.optString("last_name", "User");
+                    item.profile_pic = user_info.optString("profile_pic", "null");
+                    item.verified = user_info.optString("verified");
+
+                    JSONObject sound_data = itemdata.optJSONObject("sound");
+                    item.sound_id = sound_data.optString("id");
+                    item.sound_name = sound_data.optString("sound_name");
+                    item.sound_pic = sound_data.optString("thum");
 
 
-                    item.video_id=itemdata.optString("id");
-                    item.liked=itemdata.optString("liked");
-                    item.video_url=itemdata.optString("video");
-                    item.video_description=itemdata.optString("description");
+                    JSONObject count = itemdata.optJSONObject("count");
+                    item.like_count = count.optString("like_count");
+                    item.video_comment_count = count.optString("video_comment_count");
 
-                    item.thum=itemdata.optString("thum");
-                    item.created_date=itemdata.optString("created");
 
-                    data_list.add(item);
+                    item.video_id = itemdata.optString("id");
+                    item.liked = itemdata.optString("liked");
+                    item.video_url = itemdata.optString("video");
+                    item.video_description = itemdata.optString("description");
+
+                    item.thum = itemdata.optString("thum");
+                    item.created_date = itemdata.optString("created");
+
+                    if (!map.containsKey(itemdata.optString("id"))) {
+                        map.put(itemdata.optString("id"), "");
+                        data_list.add(item);
+                    }
                 }
 
+                if(isAdapter == 0)
                 Set_Adapter();
+                else
+                {
+
+                    adapter.notifyDataSetChanged();
+
+                }
+
 
             }else {
-                Toast.makeText(context, ""+jsonObject.optString("msg"), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Nothing more to show", Toast.LENGTH_SHORT).show();
             }
 
         } catch (JSONException e) {
@@ -455,13 +473,14 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
         }
 
 
-        ApiRequest.Call_Api(context, Variables.showAllVideos, parameters, new Callback() {
+       /* ApiRequest.Call_Api(context, Variables.showAllVideos, parameters, new Callback() {
             @Override
             public void Responce(String resp) {
-                swiperefresh.setRefreshing(false);
-                Singal_Video_Parse_data(postion,resp);
+                //regular
+             //   swiperefresh.setRefreshing(false);
+            //    Singal_Video_Parse_data(postion,resp);
             }
-        });
+        });*/
 
 
     }
@@ -526,7 +545,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
 
 
-     public void Set_Player(final int currentPage){
+     public void Set_Player (final int currentPage) {
 
             final Home_Get_Set item= data_list.get(currentPage);
 
@@ -583,17 +602,13 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
         if(currentPage+1!=data_list.size())
             nextURL = data_list.get(currentPage+1).video_url;
 
-
-
-
-
-
-
-
-
-
-
-
+        if(data_list.size()>5)
+        {
+            if(currentPage+1 == data_list.size() - 5)
+            {
+                Call_Api_For_get_Allvideos();
+            }
+        }
 
 
         final RelativeLayout mainlayout = layout.findViewById(R.id.mainlayout);
@@ -835,6 +850,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
             @Override
             public void OnSuccess(String responce) {
 
+                int s = 0;
             }
 
             @Override
@@ -1010,6 +1026,9 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
     }
     void report( String a, Home_Get_Set home_get_set){
 
+        if(adapter.getItemCount()>currentPage+1)
+        recyclerView.smoothScrollToPosition(currentPage+1);
+
         String action = a;
         Functions.Call_Api_For_report_video(getActivity(), home_get_set.video_id, action,new API_CallBack() {
 
@@ -1024,8 +1043,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
                 recyclerView.post(new Runnable() {
                     @Override
                     public void run() {
-                        recyclerView.smoothScrollToPosition(adapter.getItemCount() - 1);
-                        Toast. makeText(getApplicationContext(),"Video reported",Toast. LENGTH_SHORT).show();
+                        Toast. makeText(getApplicationContext(),"Video disliked",Toast. LENGTH_SHORT).show();
 
 
 
@@ -1072,7 +1090,47 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
                 }else{
                     String action = options[item].toString();
-                    Functions.Call_Api_For_report_video(getActivity(), home_get_set.video_id, action,new API_CallBack() {
+
+                    Date c = Calendar.getInstance().getTime();
+                    System.out.println("Current time => " + c);
+
+                    SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                    String formattedDate = df.format(c);
+
+                    SharedPreferences s = PreferenceManager.getDefaultSharedPreferences(context) ;
+
+                    String getDate = s.getString("date","");
+                    int count = s.getInt("report",0);
+
+                    if(getDate.equals(formattedDate)  )
+                    {
+                        if(count>7)
+                        {
+
+                            Toast.makeText(context,"Try again after sometime", Toast.LENGTH_SHORT).show();
+                            return;
+                        }else{
+
+                            SharedPreferences.Editor e = s.edit();
+
+                             e.putString("date", formattedDate).apply();
+                            count++;
+                            e.putInt("report",count);
+                            e.apply();
+                        }
+                    }else{
+
+                         SharedPreferences.Editor e = s.edit();
+
+                        e.putString("date", formattedDate).apply();
+                        count=0;
+                        e.putInt("report",count);
+                        e.apply();
+                    }
+                    if(adapter.getItemCount()>currentPage+1)
+                        recyclerView.smoothScrollToPosition(currentPage+1);
+
+                     Functions.Call_Api_For_report_video(getActivity(), home_get_set.video_id, action,new API_CallBack() {
 
                         @Override
                         public void ArrayData(ArrayList arrayList) {
@@ -1085,7 +1143,6 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
                             recyclerView.post(new Runnable() {
                                 @Override
                                 public void run() {
-                                    recyclerView.smoothScrollToPosition(adapter.getItemCount() - 1);
                                    Toast. makeText(getApplicationContext(),"Video reported",Toast. LENGTH_SHORT).show();
                                 }
                             });

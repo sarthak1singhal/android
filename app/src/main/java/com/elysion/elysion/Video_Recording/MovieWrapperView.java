@@ -1,8 +1,6 @@
 package com.elysion.elysion.Video_Recording;
 
-/**
- * Created by AQEEL on 3/24/2019.
- */
+
 
 
 import android.content.Context;
@@ -12,9 +10,7 @@ import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-/**
- * Aspect 16 : 9 of View
- */
+
 public class MovieWrapperView extends FrameLayout {
 
     public MovieWrapperView(@NonNull Context context) {

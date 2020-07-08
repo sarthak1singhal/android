@@ -14,6 +14,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
+
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
@@ -50,7 +52,7 @@ import java.util.ArrayList;
 // This is the profile screen which is show in 5 tab as well as it is also call
 // when we see the profile of other users
 
-public class Profile_F extends RootFragment implements View.OnClickListener {
+public class Profile_F extends RootFragment implements View.OnClickListener{
 
     View view;
     Context context;
@@ -108,6 +110,14 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
 
         getActivity();
 
+
+        new SwipeDetector(view).setOnSwipeListener(new SwipeDetector.onSwipeEvent() {
+            @Override
+            public void SwipeEventDetected(View v, SwipeDetector.SwipeTypeEnum swipeType) {
+                if(swipeType==SwipeDetector.SwipeTypeEnum.LEFT_TO_RIGHT)
+                    getActivity().onBackPressed();
+            }
+        });
          bundle=getArguments();
         if(bundle!=null){
             user_id=bundle.getString("user_id");
@@ -118,6 +128,31 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
 
         return init();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,6 +192,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
 
 
 
+
     public View init(){
 
         username=view.findViewById(R.id.username2_txt);
@@ -191,6 +227,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
         adapter = new ViewPagerAdapter(getResources(), getChildFragmentManager());
         pager.setAdapter(adapter);
         tabLayout.setupWithViewPager(pager);
+
 
         setupTabIcons();
 
@@ -320,7 +357,6 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
 
 
     }
-
 
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -654,69 +690,134 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
 
 
 
-class OnSwipeTouchListener implements View.OnTouchListener {
+  class SwipeDetector implements View.OnTouchListener{
 
-    private final GestureDetector gestureDetector;
+    private int min_distance = 100;
+    private float downX, downY, upX, upY;
+    private View v;
 
-    public OnSwipeTouchListener (Context ctx){
-        gestureDetector = new GestureDetector(ctx, new GestureListener());
+    private onSwipeEvent swipeEventListener;
+
+
+
+    public SwipeDetector(View v){
+        this.v=v;
+        v.setOnTouchListener(this);
     }
 
-    @Override
+    public void setOnSwipeListener(onSwipeEvent listener)
+    {
+        try{
+            swipeEventListener=listener;
+        }
+        catch(ClassCastException e)
+        {
+            Log.e("ClassCastException","please pass SwipeDetector.onSwipeEvent Interface instance",e);
+        }
+    }
+
+
+    public void onRightToLeftSwipe(){
+        if(swipeEventListener!=null)
+            swipeEventListener.SwipeEventDetected(v,SwipeTypeEnum.RIGHT_TO_LEFT);
+        else
+            Log.e("SwipeDetector error","please pass SwipeDetector.onSwipeEvent Interface instance");
+    }
+
+    public void onLeftToRightSwipe(){
+        if(swipeEventListener!=null)
+            swipeEventListener.SwipeEventDetected(v,SwipeTypeEnum.LEFT_TO_RIGHT);
+        else
+            Log.e("SwipeDetector error","please pass SwipeDetector.onSwipeEvent Interface instance");
+    }
+
+    public void onTopToBottomSwipe(){
+        if(swipeEventListener!=null)
+            swipeEventListener.SwipeEventDetected(v,SwipeTypeEnum.TOP_TO_BOTTOM);
+        else
+            Log.e("SwipeDetector error","please pass SwipeDetector.onSwipeEvent Interface instance");
+    }
+
+    public void onBottomToTopSwipe(){
+        if(swipeEventListener!=null)
+            swipeEventListener.SwipeEventDetected(v,SwipeTypeEnum.BOTTOM_TO_TOP);
+        else
+            Log.e("SwipeDetector error","please pass SwipeDetector.onSwipeEvent Interface instance");
+    }
+
     public boolean onTouch(View v, MotionEvent event) {
-        return gestureDetector.onTouchEvent(event);
-    }
-
-    private final class GestureListener extends GestureDetector.SimpleOnGestureListener {
-
-        private static final int SWIPE_THRESHOLD = 100;
-        private static final int SWIPE_VELOCITY_THRESHOLD = 100;
-
-        @Override
-        public boolean onDown(MotionEvent e) {
-            return true;
-        }
-
-        @Override
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-            boolean result = false;
-            try {
-                float diffY = e2.getY() - e1.getY();
-                float diffX = e2.getX() - e1.getX();
-                if (Math.abs(diffX) > Math.abs(diffY)) {
-                    if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
-                        if (diffX > 0) {
-                            onSwipeRight();
-                        } else {
-                            onSwipeLeft();
-                        }
-                        result = true;
-                    }
-                }
-                else if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
-                    if (diffY > 0) {
-                        onSwipeBottom();
-                    } else {
-                        onSwipeTop();
-                    }
-                    result = true;
-                }
-            } catch (Exception exception) {
-                exception.printStackTrace();
+        switch(event.getAction()){
+            case MotionEvent.ACTION_DOWN: {
+                downX = event.getX();
+                downY = event.getY();
+                return true;
             }
-            return result;
+            case MotionEvent.ACTION_UP: {
+                upX = event.getX();
+                upY = event.getY();
+
+                float deltaX = downX - upX;
+                float deltaY = downY - upY;
+
+                //HORIZONTAL SCROLL
+                if(Math.abs(deltaX) > Math.abs(deltaY))
+                {
+                    if(Math.abs(deltaX) > min_distance){
+                        // left or right
+                        if(deltaX < 0)
+                        {
+                            this.onLeftToRightSwipe();
+                            return true;
+                        }
+                        if(deltaX > 0) {
+                            this.onRightToLeftSwipe();
+                            return true;
+                        }
+                    }
+                    else {
+                        //not long enough swipe...
+                        return false;
+                    }
+                }
+                //VERTICAL SCROLL
+                else
+                {
+                    if(Math.abs(deltaY) > min_distance){
+                        // top or down
+                        if(deltaY < 0)
+                        { this.onTopToBottomSwipe();
+                            return true;
+                        }
+                        if(deltaY > 0)
+                        { this.onBottomToTopSwipe();
+                            return true;
+                        }
+                    }
+                    else {
+                        //not long enough swipe...
+                        return false;
+                    }
+                }
+
+                return true;
+            }
         }
+        return false;
+    }
+    public interface onSwipeEvent
+    {
+        public void SwipeEventDetected(View v, SwipeTypeEnum SwipeType);
     }
 
-    public void onSwipeRight() {
+    public SwipeDetector setMinDistanceInPixels(int min_distance)
+    {
+        this.min_distance=min_distance;
+        return this;
     }
 
-    public void onSwipeLeft() {
+    public enum SwipeTypeEnum
+    {
+        RIGHT_TO_LEFT,LEFT_TO_RIGHT,TOP_TO_BOTTOM,BOTTOM_TO_TOP
     }
 
-    public void onSwipeTop() {
-    }
-
-    public void onSwipeBottom() {
-    }
 }

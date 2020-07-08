@@ -161,8 +161,6 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback,V
     }
 
 
-
-
     // when the video is uploading successfully it will restart the appliaction
     @Override
     public void ShowResponce(final String responce) {

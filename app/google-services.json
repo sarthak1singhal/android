@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "724214936917-qhnaluqsdkfog03rurmioh3ln4nuc2lk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elysion.elysion",
+            "certificate_hash": "915f0acae9d2c60d237212dbc6daf923fefde07c"
+          }
+        },
+        {
           "client_id": "724214936917-117mq820d4reqagsk73bl08pb5791p7j.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -28,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "724214936917-117mq820d4reqagsk73bl08pb5791p7j.apps.googleusercontent.com",
+              "client_id": "724214936917-4i7d2p1aa7tfvafjmlf6bfnukj0klgf1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

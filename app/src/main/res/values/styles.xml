@@ -35,7 +35,7 @@
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/black</item>
         <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">false</item>
         <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
         <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">false</item>
