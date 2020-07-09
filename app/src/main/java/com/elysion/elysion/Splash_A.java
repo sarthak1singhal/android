@@ -31,7 +31,7 @@ public class Splash_A extends AppCompatActivity {
 
         Variables.sharedPreferences = getSharedPreferences(Variables.pref_name, MODE_PRIVATE);
 
-        countDownTimer = new CountDownTimer(200, 100) {
+        countDownTimer = new CountDownTimer(100, 50) {
 
             public void onTick(long millisUntilFinished) {
 

@@ -1222,13 +1222,12 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
 
 
-
     }
 
     public void Applywatermark(final Home_Get_Set item){
 
          Bitmap myLogo = ((BitmapDrawable)getResources().getDrawable(R.drawable.ic_watermark_image)).getBitmap();
-         Bitmap bitmap_resize=Bitmap.createScaledBitmap(myLogo, 50, 50, false);
+         Bitmap bitmap_resize=Bitmap.createScaledBitmap(myLogo, 50, 30, false);
          GlWatermarkFilter filter=new GlWatermarkFilter(bitmap_resize, GlWatermarkFilter.Position.LEFT_TOP);
          new GPUMp4Composer(Variables.app_folder+item.video_id+"no_watermark"+".mp4",
                 Variables.app_folder+item.video_id+".mp4")

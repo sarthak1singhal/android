@@ -1330,20 +1330,14 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                 Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
                 Functions.cancel_determinent_loader();
             }
-
-
         });
-
-
-
-
     }
 
     public void Applywatermark(final Home_Get_Set item){
 
         Bitmap myLogo = ((BitmapDrawable)getResources().getDrawable(R.drawable.ic_watermark_image)).getBitmap();
-        Bitmap bitmap_resize=Bitmap.createScaledBitmap(myLogo, 50, 50, false);
-        GlWatermarkFilter filter=new GlWatermarkFilter(bitmap_resize, GlWatermarkFilter.Position.LEFT_TOP);
+        Bitmap bitmap_resize=Bitmap.createScaledBitmap(myLogo, 50, 30, false);
+        GlWatermarkFilter filter=new GlWatermarkFilter(bitmap_resize, GlWatermarkFilter.Position.RIGHT_BOTTOM);
         new GPUMp4Composer(Variables.app_folder+item.video_id+"no_watermark"+".mp4",
                 Variables.app_folder+item.video_id+".mp4")
                 .filter(filter)
@@ -1476,8 +1470,6 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
     }
 
 
-
-    // Bottom all the function and the Call back listener of the Expo player
     @Override
     public void onTimelineChanged(Timeline timeline, @Nullable Object manifest, int reason) {
 

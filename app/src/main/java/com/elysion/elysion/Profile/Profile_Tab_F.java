@@ -469,7 +469,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
             String code=jsonObject.optString("code");
             if(code.equals("200")){
                 JSONArray msgArray=jsonObject.getJSONArray("msg");
-
+///here
                 JSONObject data=msgArray.getJSONObject(0);
                 JSONObject user_info=data.optJSONObject("user_info");
                 username2_txt.setText(user_info.optString("username"));
@@ -510,7 +510,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
 
 
             }else {
-                Toast.makeText(context, ""+jsonObject.optString("msg"), Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(context, ""+jsonObject.optString("msg"), Toast.LENGTH_SHORT).show();
             }
 
         } catch (JSONException e) {
