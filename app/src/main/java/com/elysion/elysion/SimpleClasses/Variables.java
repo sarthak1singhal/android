@@ -129,6 +129,10 @@ public class Variables {
     public static final String search=domain+"search";
     public static final String getNotifications=domain+"getNotifications";
     public static final String getVerified=domain+"getVerified";
+    public static final String updateLanguage = domain + "post_language";
+
+
+    public static final String selectedLanguage = "selected_language";
 
 
 }

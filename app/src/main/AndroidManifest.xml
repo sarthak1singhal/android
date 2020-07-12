@@ -34,6 +34,9 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:replace="allowBackup,supportsRtl">
+        <activity
+            android:name=".LanguageSelectActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Accounts.Request_Varification_F" />
         <activity android:name=".SoundLists.VideoSound_A" />
         <activity

@@ -18,9 +18,10 @@ import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
 import android.provider.MediaStore;
-import androidx.annotation.Nullable;
 import android.util.Base64;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
@@ -88,6 +89,7 @@ public class Upload_Service extends Service{
 
     String description;
 
+    String content_language, category;
     SharedPreferences sharedPreferences;
 
     public Upload_Service() {
@@ -121,6 +123,8 @@ public class Upload_Service extends Service{
             String uri_string= intent.getStringExtra("uri");
             uri = Uri.parse(uri_string);
             description=intent.getStringExtra("desc");
+            category = intent.getStringExtra("category");
+            content_language = intent.getStringExtra("content_language");
 
             new Thread(new Runnable() {
                 @Override
@@ -174,6 +178,11 @@ public class Upload_Service extends Service{
                 parameters.put("fb_id", sharedPreferences.getString(Variables.u_id,""));
                 parameters.put("sound_id", Variables.Selected_sound_id);
                 parameters.put("description",description);
+                parameters.put("content_language", content_language);
+                parameters.put("category", category);
+
+                Log.d("UploadService", content_language);
+                Log.d("UploadService", category);
 
                 JSONObject vidoefiledata=new JSONObject();
                 vidoefiledata.put("file_data",video_base64);

@@ -5,15 +5,16 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.elysion.elysion.Home.Home_Get_Set;
 import com.elysion.elysion.Profile.MyVideos_Adapter;
@@ -122,6 +123,9 @@ public class UserVideo_F extends Fragment {
         is_api_run=true;
         JSONObject parameters = new JSONObject();
         try {
+            if (user_id == null || user_id.isEmpty()) {
+                user_id = Variables.user_id;
+            }
             parameters.put("my_fb_id",Variables.sharedPreferences.getString(Variables.u_id,""));
             parameters.put("fb_id", user_id);
 

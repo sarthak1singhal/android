@@ -5,14 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.elysion.elysion.Accounts.Request_Varification_F;
+import com.elysion.elysion.LanguageSelectActivity;
 import com.elysion.elysion.Main_Menu.MainMenuActivity;
 import com.elysion.elysion.Main_Menu.RelateToFragment_OnBack.RootFragment;
 import com.elysion.elysion.R;
@@ -43,6 +44,7 @@ public class Setting_F extends RootFragment implements View.OnClickListener {
         view.findViewById(R.id.request_verification_txt).setOnClickListener(this);
         view.findViewById(R.id.privacy_policy_txt).setOnClickListener(this);
         view.findViewById(R.id.logout_txt).setOnClickListener(this);
+        view.findViewById(R.id.language_txt).setOnClickListener(this);
 
 
 
@@ -68,9 +70,17 @@ public class Setting_F extends RootFragment implements View.OnClickListener {
             case R.id.logout_txt:
                 Logout();
                 break;
+            case R.id.language_txt:
+                Open_LanguageSetting();
+                break;
         }
     }
 
+    public void Open_LanguageSetting() {
+        Intent intent = new Intent(getActivity(), LanguageSelectActivity.class);
+        startActivity(intent);
+        getActivity().overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
+    }
 
     public void Open_request_verification(){
         Request_Varification_F request_varification_f = new Request_Varification_F();

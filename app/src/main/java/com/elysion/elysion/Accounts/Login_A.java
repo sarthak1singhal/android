@@ -11,8 +11,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextPaint;
@@ -27,7 +25,9 @@ import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.elysion.elysion.Main_Menu.MainMenuActivity;
+import androidx.annotation.NonNull;
+
+import com.elysion.elysion.LanguageSelectActivity;
 import com.elysion.elysion.R;
 import com.elysion.elysion.SimpleClasses.ApiRequest;
 import com.elysion.elysion.SimpleClasses.Callback;
@@ -449,7 +449,7 @@ public class Login_A extends Activity {
 
                 top_view.setVisibility(View.GONE);
                 finish();
-                startActivity(new Intent(this, MainMenuActivity.class));
+                startActivity(new Intent(this, LanguageSelectActivity.class));
 
 
 
