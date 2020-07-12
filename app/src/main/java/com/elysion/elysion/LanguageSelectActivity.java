@@ -16,7 +16,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LanguageSelectActivity extends Activity implements LanguageAdapter.OnLanguageSelectionListener {
 
@@ -24,6 +26,8 @@ public class LanguageSelectActivity extends Activity implements LanguageAdapter.
     LinearLayoutManager linearLayoutManager;
     LanguageAdapter languageAdapter;
     List<String> languageNameList = new ArrayList<>();
+    Map<String, String> language
+            = new HashMap<String, String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +48,24 @@ public class LanguageSelectActivity extends Activity implements LanguageAdapter.
         languageList.setLayoutManager(linearLayoutManager);
 
         languageNameList.add("English");
-        languageNameList.add("Hindi");
-        languageNameList.add("Tamil");
-        languageNameList.add("Telugu");
-        languageNameList.add("Marathi");
-        languageNameList.add("Gujarati");
-        languageNameList.add("Kannada");
-        languageNameList.add("Bengali");
+        languageNameList.add("हिन्दी");
+        languageNameList.add("தமிழ்");
+        languageNameList.add("తెలుగు");
+        languageNameList.add("मराठी");
+        languageNameList.add("ગુજરાતી");
+        languageNameList.add("ಕನ್ನಡ");
+        languageNameList.add("বাংলা");
+
+
+        language.put("English","english");
+        language.put("हिन्दी","hindi");
+        language.put("தமிழ்","tamil");
+        language.put("తెలుగు","telugu");
+        language.put("मराठी","marathi");
+        language.put("ગુજરાતી","gujarati");
+        language.put("ಕನ್ನಡ","kannada");
+        language.put("বাংলা","bengali");
+
 
         // specify an adapter (see also next example)
         languageAdapter = new LanguageAdapter(languageNameList, this);
@@ -80,7 +95,7 @@ public class LanguageSelectActivity extends Activity implements LanguageAdapter.
         try {
 
             parameters.put("fb_id", id);
-            parameters.put("language", "" + languageName);
+            parameters.put("language", "" + language.get(languageName));
 
 
         } catch (JSONException e) {

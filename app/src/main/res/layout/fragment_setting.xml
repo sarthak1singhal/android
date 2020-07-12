@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/d_bottom_gray_line"
                 android:padding="15dp"
-                android:text="Language"
+                android:text="Content Language"
                 android:textColor="@color/black"
                 android:textSize="15dp"
                 android:textStyle="bold" />

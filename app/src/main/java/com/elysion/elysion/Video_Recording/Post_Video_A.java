@@ -36,7 +36,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Post_Video_A extends AppCompatActivity implements ServiceCallback, View.OnClickListener {
 
@@ -46,6 +48,8 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
     ProgressDialog progressDialog;
     ServiceCallback serviceCallback;
     EditText description_edit;
+    Map<String, String> language
+            = new HashMap<String, String>();
 
     String draft_file;
 
@@ -127,7 +131,7 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
                     Toast.makeText(Post_Video_A.this, "Please select category", Toast.LENGTH_SHORT).show();
                     return;
                 } else if (selectedLanguage.isEmpty()) {
-                    Toast.makeText(Post_Video_A.this, "Please select language", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Post_Video_A.this, "Please select content language", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 Start_Service();
@@ -142,20 +146,30 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
         findViewById(R.id.save_draft_btn).setOnClickListener(this);
 
         languageList.add("English");
-        languageList.add("Hindi");
-        languageList.add("Tamil");
-        languageList.add("Telugu");
-        languageList.add("Marathi");
-        languageList.add("Gujarati");
-        languageList.add("Kannada");
-        languageList.add("Bengali");
+        languageList.add("हिन्दी");
+        languageList.add("தமிழ்");
+        languageList.add("తెలుగు");
+        languageList.add("मराठी");
+        languageList.add("ગુજરાતી");
+        languageList.add("ಕನ್ನಡ");
+        languageList.add("বাংলা");
+
+
+        language.put("English","english");
+        language.put("हिन्दी","hindi");
+        language.put("தமிழ்","tamil");
+        language.put("తెలుగు","telugu");
+        language.put("मराठी","marathi");
+        language.put("ગુજરાતી","gujarati");
+        language.put("ಕನ್ನಡ","kannada");
+        language.put("বাংলা","bengali");
+
 
         categoryList.add("Comedy");
         categoryList.add("Travel");
         categoryList.add("Food");
         categoryList.add("Fashion");
-        categoryList.add("Movies");
-        categoryList.add("TV");
+        categoryList.add("TV Show and Movies");
         categoryList.add("Personal Care");
         categoryList.add("Tech");
         categoryList.add("Recipes");
@@ -186,7 +200,7 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
         languageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                selectedLanguage = languageList.get(position);
+                selectedLanguage = language.get(languageList.get(position));
             }
 
             @Override

@@ -16,49 +16,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_MasayukiSuda_GPUVideo_android_v0_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_2_8_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_core_2_8_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_dash_2_8_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_hls_2_8_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_smoothstreaming_2_8_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_exoplayer_exoplayer_ui_2_8_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Splash_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Splash_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_tic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_tic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_tic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_tic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_tic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_tic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_tic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_tic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_gallery_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_gallery_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_liked_video_color.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_liked_video_color.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_liked_video_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_liked_video_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_watermark_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_watermark_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/See_Full_Image_F.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/See_Full_Image_F.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/splash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_langauge_select.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_langauge_select.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_post_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_post_video.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,43 +106,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="1407" lean-forward="true" selection-start-line="1407" selection-end-line="1407" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5078">
-              <caret line="444" selection-start-line="444" selection-end-line="444" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/See_Full_Image_F.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+            <state relative-caret-position="155">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Splash_A.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -184,21 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="457" column="13" lean-forward="true" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="507" selection-start-line="507" selection-end-line="507" />
-              <folding>
-                <element signature="e#13724#13725#0" expanded="true" />
-                <element signature="e#13772#13773#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="245">
+              <caret line="446" column="56" selection-start-line="446" selection-start-column="56" selection-end-line="446" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -206,27 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/Variables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="1768">
               <caret line="108" column="46" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_see_full_image.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -234,8 +144,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Preview_Video_A.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="-3961">
               <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="e#19487#19497#0" expanded="true" />
+                <element signature="e#20294#20295#0" expanded="true" />
+                <element signature="e#20326#20327#0" expanded="true" />
+                <element signature="e#20409#20410#0" expanded="true" />
+                <element signature="e#20444#20445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/LanguageSelectActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="159" column="31" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+              <folding>
+                <element signature="e#1586#1602#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_post_video.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="183" column="22" lean-forward="true" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -252,8 +218,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>report</find>
-      <find>I don't like it</find>
       <find>video</find>
       <find>7</find>
       <find>Call_Api_For_Singlevideos</find>
@@ -282,6 +246,8 @@
       <find>GPUVideo</find>
       <find>watermar</find>
       <find>water</find>
+      <find>video dis</find>
+      <find>select l</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -296,10 +262,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile_tab.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_home_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Notifications/Notification_F.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_notification.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_notification.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/MyVideos_Adapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Search/Search_Main_F.java" />
@@ -316,7 +278,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/SaveVideoBg.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_watch_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/d_top_white_line.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
@@ -331,7 +292,6 @@
         <option value="$PROJECT_DIR$/app/.gitignore" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_F.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/MovieWrapperView.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
@@ -343,17 +303,24 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ar_try.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/ar_try.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Splash_A.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/See_Full_Image_F.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_langauge_select.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_post_video.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
+    <option name="x" value="546" />
+    <option name="y" value="27" />
     <option name="width" value="960" />
-    <option name="height" value="1000" />
+    <option name="height" value="748" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -363,6 +330,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Android source code" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -430,7 +445,65 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="elysion" type="462c0819:PsiDirectoryNode" />
-              <item name="Accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="elysion" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile_F.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="elysion" type="462c0819:PsiDirectoryNode" />
+              <item name="Video_Recording" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="anim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="color" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Android source code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Android source code" type="b2602c69:ProjectViewProjectNode" />
@@ -441,55 +514,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Android source code" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Android source code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/tiktok/codecanyon-6OaMmnBL-tictic-android-media-app-for-creating-and-sharing-short-videos/Tictic android app june 29/Android source code" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -666,7 +691,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.63076925" visible="true" weight="0.23372465" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.63076925" visible="true" weight="0.1782284" />
       <window_info id="Structure" order="2" sideWeight="0.36923078" side_tool="true" weight="0.24813233" />
       <window_info id="Build Variants" order="3" sideWeight="0.36923078" side_tool="true" weight="0.24813233" />
       <window_info id="Image Layers" order="4" />
@@ -674,16 +699,16 @@
       <window_info id="Resources Explorer" order="6" weight="0.32977587" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" sideWeight="0.13900709" side_tool="true" weight="0.25026682" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4967983" weight="0.2238806" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.5166475" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4967983" weight="0.27669346" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.03444317" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.42955327" />
       <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.40320733" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3295063" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.4994664" weight="0.03436426" />
+      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.4994664" weight="0.40183696" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5032017" side_tool="true" weight="0.19243987" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49786553" weight="0.03444317" />
-      <window_info active="true" anchor="bottom" id="Debug" order="9" sideWeight="0.49252936" visible="true" weight="0.45005742" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49786553" weight="0.4282434" />
+      <window_info active="true" anchor="bottom" id="Debug" order="9" sideWeight="0.49252936" visible="true" weight="0.30195177" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.32924226" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -759,166 +784,87 @@
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>187</line>
-          <properties />
-          <option name="timeStamp" value="209" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>226</line>
-          <properties />
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>174</line>
-          <properties />
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>182</line>
-          <properties />
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>203</line>
-          <properties />
-          <option name="timeStamp" value="216" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>240</line>
-          <properties />
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>277</line>
-          <properties />
-          <option name="timeStamp" value="223" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java</url>
-          <line>447</line>
-          <properties />
-          <option name="timeStamp" value="225" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>455</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>285</line>
           <properties />
           <option name="timeStamp" value="226" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>472</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>277</line>
           <properties />
-          <option name="timeStamp" value="227" />
+          <option name="timeStamp" value="228" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>474</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>276</line>
           <properties />
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>478</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>290</line>
           <properties />
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>480</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>283</line>
           <properties />
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>494</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>500</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>256</line>
           <properties />
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>506</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java</url>
+          <line>257</line>
           <properties />
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>507</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java</url>
+          <line>183</line>
           <properties />
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java</url>
-          <line>512</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java</url>
+          <line>192</line>
           <properties />
           <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java</url>
+          <line>188</line>
+          <properties />
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java</url>
+          <line>253</line>
+          <properties />
+          <option name="timeStamp" value="241" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/Webview_F.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-402">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/ViewPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3128">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/MyVideos_Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/Watch_Videos_Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/VideoFragment.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/SaveVideoBg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/MyVideos_Get_Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -926,20 +872,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="122" column="48" lean-forward="true" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile_tab.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/app/.gitignore">
@@ -950,12 +889,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="343" column="28" selection-start-line="343" selection-start-column="28" selection-end-line="343" selection-end-column="28" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/UserVideos/UserVideo_F.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -997,33 +936,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview_video.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_record_video.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_watchvideo.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1068,13 +1000,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/LICENCE.dms">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3179">
-          <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/ApiRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1114,20 +1039,13 @@
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/See_Full_Image_F.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_see_full_image.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -1136,64 +1054,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Preview_Video_A.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_watermark_image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Splash_A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="188">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_watermark_image.png">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/Custom_ViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_add_black.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/WatchVideos/WatchVideos_F.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="1407" lean-forward="true" selection-start-line="1407" selection-end-line="1407" />
+        <state relative-caret-position="21828">
+          <caret line="1407" selection-start-line="1407" selection-end-line="1407" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Splash_A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Home/Home_F.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5078">
-          <caret line="444" selection-start-line="444" selection-end-line="444" />
+        <state relative-caret-position="15708">
+          <caret line="1051" column="21" selection-start-line="1051" selection-start-column="21" selection-end-line="1051" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="457" column="13" lean-forward="true" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
+        <state relative-caret-position="731">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Main_Menu/MainMenuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7191">
+          <caret line="463" column="80" selection-start-line="463" selection-start-column="80" selection-end-line="463" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/SimpleClasses/Variables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="1768">
           <caret line="108" column="46" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/See_Full_Image_F.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Accounts/Login_A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="446" column="56" selection-start-line="446" selection-start-column="56" selection-end-line="446" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_langauge_select.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/LanguageSelectActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Profile/Profile_Tab_F.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="507" selection-start-line="507" selection-end-line="507" />
+        <state relative-caret-position="17">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
-            <element signature="e#13724#13725#0" expanded="true" />
-            <element signature="e#13772#13773#0" expanded="true" />
+            <element signature="e#19487#19497#0" expanded="true" />
+            <element signature="e#20294#20295#0" expanded="true" />
+            <element signature="e#20326#20327#0" expanded="true" />
+            <element signature="e#20409#20410#0" expanded="true" />
+            <element signature="e#20444#20445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Preview_Video_A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3961">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Services/Upload_Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="183" column="22" lean-forward="true" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_post_video.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/elysion/elysion/Video_Recording/Post_Video_A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="159" column="31" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+          <folding>
+            <element signature="e#1586#1602#0" expanded="true" />
           </folding>
         </state>
       </provider>

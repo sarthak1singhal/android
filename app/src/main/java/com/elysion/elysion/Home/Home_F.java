@@ -1043,7 +1043,9 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
                 recyclerView.post(new Runnable() {
                     @Override
                     public void run() {
-                        Toast. makeText(getApplicationContext(),"Video disliked",Toast. LENGTH_SHORT).show();
+
+
+                        //Toast. makeText(getApplicationContext(),"Video disliked",Toast. LENGTH_SHORT).show();
 
 
 
