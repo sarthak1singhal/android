@@ -474,7 +474,7 @@ public class Login_A extends Activity {
             {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                Log.i("keyhash" , Base64.encodeToString(md.digest(), Base64.DEFAULT));
+              //  Log.i("keyhash" , Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
