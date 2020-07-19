@@ -1,5 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="textNormalSize">10dp</dimen>
+    <dimen name="textNormalSize">12dp</dimen>
     <dimen name="countTextSize">15dp</dimen>
 </resources>
