@@ -22,12 +22,12 @@
 
          <com.google.android.material.tabs.TabLayout
              android:id="@+id/tabs"
+             android:layout_height="70dp"
              android:layout_width="match_parent"
-             android:layout_height="58dp"
+             android:background="#70000000"
              android:layout_alignParentBottom="true"
              android:layout_marginLeft="-1dp"
              android:layout_weight="1"
-             android:background="@drawable/d_top_white_line"
              android:elevation="5dp"
              android:gravity="center"
              app:tabGravity="fill"
