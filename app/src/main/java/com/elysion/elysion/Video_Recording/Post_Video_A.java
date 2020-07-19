@@ -17,7 +17,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.work.Constraints;
 import androidx.work.Data;
+import androidx.work.NetworkType;
 import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
 
@@ -228,8 +230,11 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
                 .putString("content_language", "" + selectedLanguage)
                 .putString("category", "" + selectedCategory)
                 .build();
+        Constraints constraints = new Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build();
         OneTimeWorkRequest oneTimeWorkRequest = new OneTimeWorkRequest.Builder(UploadWorkRequest.class)
-                .setInputData(data).build();
+                .setInputData(data).setConstraints(constraints).build();
 
         WorkManager.getInstance(this).enqueue(oneTimeWorkRequest);
         startActivity(new Intent(Post_Video_A.this, MainMenuActivity.class));
