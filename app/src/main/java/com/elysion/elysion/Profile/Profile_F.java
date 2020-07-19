@@ -5,19 +5,8 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-
-import com.elysion.elysion.SimpleClasses.ApiRequest;
-import com.elysion.elysion.SimpleClasses.Callback;
-import com.google.android.material.tabs.TabLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
-
 import android.util.Log;
 import android.util.SparseArray;
-import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -25,9 +14,13 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.elysion.elysion.Chat.Chat_Activity;
 import com.elysion.elysion.Following.Following_F;
@@ -37,6 +30,8 @@ import com.elysion.elysion.Profile.UserVideos.UserVideo_F;
 import com.elysion.elysion.R;
 import com.elysion.elysion.See_Full_Image_F;
 import com.elysion.elysion.SimpleClasses.API_CallBack;
+import com.elysion.elysion.SimpleClasses.ApiRequest;
+import com.elysion.elysion.SimpleClasses.Callback;
 import com.elysion.elysion.SimpleClasses.Fragment_Callback;
 import com.elysion.elysion.SimpleClasses.Functions;
 import com.elysion.elysion.SimpleClasses.Variables;
@@ -47,6 +42,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 // This is the profile screen which is show in 5 tab as well as it is also call
@@ -61,7 +58,8 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
    public  TextView follow_unfollow_btn;
    public  TextView username,username2_txt,video_count_txt;
    public  ImageView imageView;
-   public  TextView follow_count_txt,fans_count_txt,heart_count_txt;
+    public TextView follow_count_txt, fans_count_txt;
+
 
     ImageView back_btn,setting_btn;
 
@@ -69,16 +67,16 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
 
     Bundle bundle;
 
-    protected TabLayout tabLayout;
+    //protected TabLayout tabLayout;
 
-    protected ViewPager pager;
+    //protected ViewPager pager;
 
-    private ViewPagerAdapter adapter;
+    //private ViewPagerAdapter adapter;
 
     public boolean isdataload=false;
 
 
-    RelativeLayout tabs_main_layout;
+    //RelativeLayout tabs_main_layout;
 
     LinearLayout top_layout;
 
@@ -130,32 +128,6 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -204,7 +176,6 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
 
         follow_count_txt=view.findViewById(R.id.follow_count_txt);
         fans_count_txt=view.findViewById(R.id.fan_count_txt);
-        heart_count_txt=view.findViewById(R.id.heart_count_txt);
 
 
 
@@ -220,21 +191,25 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
 
 
 
-        tabLayout = (TabLayout) view.findViewById(R.id.tabs);
+        /*tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         pager = view.findViewById(R.id.pager);
         pager.setOffscreenPageLimit(2);
 
         adapter = new ViewPagerAdapter(getResources(), getChildFragmentManager());
         pager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(pager);
+        tabLayout.setupWithViewPager(pager);*/
 
 
-        setupTabIcons();
+        //setupTabIcons();
 
 
-        tabs_main_layout=view.findViewById(R.id.tabs_main_layout);
+        //tabs_main_layout=view.findViewById(R.id.tabs_main_layout);
         top_layout=view.findViewById(R.id.top_layout);
 
+        UserVideo_F userVideo_f = new UserVideo_F(user_id);
+        FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frame, userVideo_f);
+        fragmentTransaction.commit();
 
 
         ViewTreeObserver observer = top_layout.getViewTreeObserver();
@@ -248,7 +223,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
                 top_layout.getViewTreeObserver().removeGlobalOnLayoutListener(
                         this);
 
-                ViewTreeObserver observer = tabs_main_layout.getViewTreeObserver();
+               /* ViewTreeObserver observer = tabs_main_layout.getViewTreeObserver();
                 observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
 
                     @Override
@@ -261,7 +236,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
                                 this);
 
                     }
-                });
+                });*/
 
             }
         });
@@ -296,7 +271,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
 
     }
 
-    private void setupTabIcons() {
+   /* private void setupTabIcons() {
 
         View view1 = LayoutInflater.from(context).inflate(R.layout.item_tabs_profile_menu, null);
         ImageView imageView1= view1.findViewById(R.id.image);
@@ -356,7 +331,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
         });
 
 
-    }
+    }*/
 
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -485,7 +460,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
 
                 follow_count_txt.setText(data.optString("total_following"));
                 fans_count_txt.setText(data.optString("total_fans"));
-                heart_count_txt.setText(data.optString("total_heart"));
+                //heart_count_txt.setText(data.optString("total_heart"));
 
 
                 if(!data.optString("fb_id").
@@ -500,13 +475,14 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
 
                 JSONArray user_videos=data.getJSONArray("user_videos");
                 if(!user_videos.toString().equals("["+"0"+"]")){
-                    video_count_txt.setText(user_videos.length()+" Videos");
+                    video_count_txt.setText("" + user_videos.length());
 
                 }
 
                 String verified=user_info.optString("verified");
                 if(verified!=null && verified.equalsIgnoreCase("1")){
-                    view.findViewById(R.id.varified_btn).setVisibility(View.VISIBLE);
+                    CircleImageView circleImageView = view.findViewById(R.id.varified_btn);
+                    circleImageView.setVisibility(View.VISIBLE);
                 }
 
 
@@ -559,12 +535,12 @@ public class Profile_F extends RootFragment implements View.OnClickListener{
                     public void OnSuccess(String responce) {
 
                         if(send_status.equals("1")){
-                            follow_unfollow_btn.setText("UnFollow");
+                            follow_unfollow_btn.setText("UNFOLLOW");
                             follow_status="1";
 
                         }
                         else if(send_status.equals("0")){
-                            follow_unfollow_btn.setText("Follow");
+                            follow_unfollow_btn.setText("FOLLOW");
                             follow_status="0";
                         }
 

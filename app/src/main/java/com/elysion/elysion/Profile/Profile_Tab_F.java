@@ -74,7 +74,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
     protected ViewPager pager;
 
     private ViewPagerAdapter adapter;
-    public TextView follow_count_txt, fans_count_txt, heart_count_txt, draft_count_txt;
+    public TextView follow_count_txt, fans_count_txt, draft_count_txt;
 
 
     RelativeLayout tabs_main_layout;
@@ -163,7 +163,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
 
         follow_count_txt = view.findViewById(R.id.follow_count_txt);
         fans_count_txt = view.findViewById(R.id.fan_count_txt);
-        heart_count_txt = view.findViewById(R.id.heart_count_txt);
+        //heart_count_txt = view.findViewById(R.id.heart_count_txt);
         draft_count_txt = view.findViewById(R.id.draft_count_txt);
 
         Show_draft_count();
@@ -205,7 +205,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
                     public void onGlobalLayout() {
 
                         RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) tabs_main_layout.getLayoutParams();
-                        params.height = (int) (tabs_main_layout.getMeasuredHeight() + height);
+                        params.height = (int) (tabs_main_layout.getMeasuredHeight() + (height / 2));
                         tabs_main_layout.setLayoutParams(params);
                         tabs_main_layout.getViewTreeObserver().removeGlobalOnLayoutListener(
                                 this);
@@ -387,12 +387,11 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
 
                 follow_count_txt.setText(data.optString("total_following"));
                 fans_count_txt.setText(data.optString("total_fans"));
-                heart_count_txt.setText(data.optString("total_heart"));
 
 
                 JSONArray user_videos = data.getJSONArray("user_videos");
                 if (!user_videos.toString().equals("[" + "0" + "]")) {
-                    video_count_txt.setText(user_videos.length() + " Videos");
+                    video_count_txt.setText("" + user_videos.length());
                     create_popup_layout.setVisibility(View.GONE);
 
                 } else {
