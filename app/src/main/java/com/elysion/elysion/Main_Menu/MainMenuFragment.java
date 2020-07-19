@@ -6,6 +6,17 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
+
+import com.elysion.elysion.Chat.Chat_Activity;
+import com.elysion.elysion.Notifications.Notification_F;
+import com.google.android.material.tabs.TabLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Handler;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -17,25 +28,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
-
 import com.elysion.elysion.Accounts.Login_A;
-import com.elysion.elysion.Chat.Chat_Activity;
 import com.elysion.elysion.Discover.Discover_F;
 import com.elysion.elysion.Home.Home_F;
 import com.elysion.elysion.Main_Menu.RelateToFragment_OnBack.OnBackPressListener;
 import com.elysion.elysion.Main_Menu.RelateToFragment_OnBack.RootFragment;
-import com.elysion.elysion.Notifications.Notification_F;
 import com.elysion.elysion.Profile.Profile_Tab_F;
 import com.elysion.elysion.R;
 import com.elysion.elysion.SimpleClasses.Variables;
 import com.elysion.elysion.Video_Recording.Video_Recoder_A;
-import com.google.android.material.tabs.TabLayout;
 
 
 public class MainMenuFragment extends RootFragment implements View.OnClickListener {
@@ -442,7 +443,7 @@ public class MainMenuFragment extends RootFragment implements View.OnClickListen
 
         RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         pager.setLayoutParams(params);
-        tabLayout.setBackgroundColor(context.getResources().getColor(R.color.bottom_panel_home_color));
+        tabLayout.setBackground(getResources().getDrawable(R.drawable.d_top_white_line));
     }
 
     public void Onother_Tab_Click(){
@@ -487,7 +488,7 @@ public class MainMenuFragment extends RootFragment implements View.OnClickListen
         RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         params.addRule(RelativeLayout.ABOVE, R.id.tabs);
         pager.setLayoutParams(params);
-        tabLayout.setBackgroundColor(context.getResources().getColor(R.color.bottom_panel_color));
+        tabLayout.setBackgroundColor(getResources().getColor(R.color.white));
 
     }
 

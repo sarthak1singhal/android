@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.arthenica:mobile-ffmpeg-full:4.3.1.LTS@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0829fa200faedec6455024b734119ae1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0829fa200faedec6455024b734119ae1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arthenica/mobile-ffmpeg-full/4.3.1.LTS/e24482d972878ec1fa7fbaaf36f5fb3ff1984e7f/mobile-ffmpeg-full-4.3.1.LTS-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

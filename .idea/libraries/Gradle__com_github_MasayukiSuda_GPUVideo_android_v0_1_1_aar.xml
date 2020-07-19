@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.MasayukiSuda:GPUVideo-android:v0.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2be52003a3e5eb0b41673e2840f949b1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2be52003a3e5eb0b41673e2840f949b1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MasayukiSuda/GPUVideo-android/v0.1.1/951c8d7271b2f5dfc2522dfcba2da76312065d58/GPUVideo-android-v0.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
