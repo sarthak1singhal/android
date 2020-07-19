@@ -1,76 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/black">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="10dp"
         android:padding="0dp"
-        app:cardBackgroundColor="@color/black">
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="10dp">
 
         <RelativeLayout
+            android:id="@+id/mainlayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/mainlayout">
+            android:layout_height="match_parent">
 
 
-          <com.google.android.exoplayer2.ui.PlayerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/playerview"
-            android:layout_margin="0dp"
-            android:padding="0dp"
-            app:show_timeout="1000"
-            app:resize_mode="fill"
-            android:background="@color/black"
-            app:shutter_background_color="@color/black"
-            app:controller_layout_id="@layout/item_player_controler"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:background="@color/black"
+                android:padding="0dp"
+                app:controller_layout_id="@layout/item_player_controler"
+                app:resize_mode="fill"
+                app:show_timeout="1000"
+                app:shutter_background_color="@color/black" />
 
             <LinearLayout
+                android:id="@+id/side_menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/side_menu"
-                android:layout_marginRight="10dp"
-                android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:gravity="center_horizontal">
-
-
-                    <RelativeLayout
-                        android:layout_width="50dp"
-                        android:layout_height="50dp">
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:scaleType="centerCrop"
-                            android:id="@+id/user_pic"
-                            android:src="@drawable/profile_image_placeholder"/>
-
-                        <ImageView
-                            android:layout_width="18dp"
-                            android:layout_height="18dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentBottom="true"
-                            android:scaleType="fitCenter"
-                            android:visibility="gone"
-                            android:id="@+id/varified_btn"
-                            android:src="@drawable/ic_verified"/>
-
-                    </RelativeLayout>
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="75dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
 
                 <LinearLayout
+                    android:id="@+id/like_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/like_layout"
+                    android:layout_marginTop="20dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="20dp">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/like_image"
@@ -80,79 +59,77 @@
                         android:src="@drawable/ic_like" />
 
                     <TextView
+                        android:id="@+id/like_txt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="likes"
-                        android:id="@+id/like_txt"
                         android:shadowColor="@color/black"
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="3"
-                        android:textSize="13dp"
+                        android:text="0"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
 
                 <LinearLayout
+                    android:id="@+id/comment_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/comment_layout"
+                    android:layout_marginTop="20dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="20dp">
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/comment_image"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_comment" />
+
+                    <TextView
+                        android:id="@+id/comment_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/shared_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:scaleType="fitCenter"
-                        android:id="@+id/comment_image"
-                        android:src="@drawable/ic_comment"/>
+                        android:src="@drawable/ic_share" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="comment"
-                        android:textSize="13dp"
-                        android:id="@+id/comment_txt"
                         android:shadowColor="@color/black"
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="3"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/shared_layout"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="20dp">
-
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/ic_share"
-                        android:scaleType="fitCenter"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="Share"
-                        android:shadowColor="@color/black"
-                        android:shadowDx="1"
-                        android:shadowDy="1"
-                        android:shadowRadius="3"
-                        android:textSize="13dp"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
 
 
             </LinearLayout>
@@ -162,73 +139,123 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="15dp"
-                android:orientation="vertical"
                 android:layout_marginRight="80dp"
-                android:layout_marginBottom="70dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Username"
-                    android:textSize="13dp"
-                    android:textStyle="bold"
-                    android:id="@+id/username"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="3"
-                    android:textColor="@color/white"/>
+                android:layout_marginBottom="75dp"
+                android:orientation="vertical">
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Description"
-                    android:textSize="13dp"
-                    android:id="@+id/desc_txt"
-                    android:maxLines="3"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:ellipsize="end"
-                    android:shadowRadius="3"
-                    android:textColor="@color/white"/>
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/imageLayout"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_pic"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile_image_placeholder"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/varified_btn"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/ic_tic"
+                            android:visibility="visible"
+                            app:civ_circle_background_color="@color/black" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="-2dp"
+                        android:layout_toRightOf="@+id/imageLayout"
+                        android:fontFamily="@font/itc_avant_garde_regular"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:text="Username"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="10dp">
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/ic_music"
-                        android:tint="@color/white"
-                        android:scaleType="fitCenter"/>
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/sound_name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:singleLine="true"
+                        android:text="Indian sound or Song Name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:id="@+id/desc_txt"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Indian sound or Song Name"
-                    android:textSize="13dp"
-                    android:textStyle="bold"
-                    android:id="@+id/sound_name"
-                    android:ellipsize="marquee"
-                    android:scrollHorizontally="true"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:singleLine="true"
+                    android:layout_below="@+id/username"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/user_pic"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:maxLines="3"
                     android:shadowColor="@color/black"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="3"
-                    android:layout_marginLeft="7dp"
-                    android:textColor="@color/white"/>
-
-                </LinearLayout>
+                    android:text="Description"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
 
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_alignParentBottom="true"
@@ -246,7 +273,7 @@
                     android:id="@+id/sound_image"
                     android:src="@drawable/ic_round_music"/>
 
-            </LinearLayout>
+            </LinearLayout>-->
 
 
         </RelativeLayout>

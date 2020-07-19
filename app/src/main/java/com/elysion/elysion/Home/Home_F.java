@@ -12,40 +12,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-
-import com.danikula.videocache.CacheListener;
-import com.danikula.videocache.HttpProxyCacheServer;
-import com.elysion.elysion.SimpleClasses.ApiRequest;
-import com.elysion.elysion.SimpleClasses.Callback;
-import com.elysion.elysion.SimpleClasses.SaveVideoBg;
-import com.elysion.elysion.SimpleClasses.TicTic;
-import com.elysion.elysion.SoundLists.VideoSound_A;
-import com.elysion.elysion.WatchVideos.WatchVideos_F;
-import com.google.android.exoplayer2.DefaultLoadControl;
-import com.google.android.exoplayer2.LoadControl;
-import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
-import com.google.android.exoplayer2.extractor.ExtractorsFactory;
-import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.trackselection.TrackSelector;
-import com.google.android.exoplayer2.upstream.BandwidthMeter;
-import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
-import com.google.android.material.tabs.TabLayout;
-
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.PagerSnapHelper;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.SnapHelper;
-
-import android.os.Handler;
-import android.os.Message;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -56,27 +22,26 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.PagerSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SnapHelper;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.daasuu.gpuv.composer.GPUMp4Composer;
 import com.daasuu.gpuv.egl.filter.GlWatermarkFilter;
-import com.elysion.elysion.Comments.Comment_F;
-import com.elysion.elysion.Main_Menu.MainMenuActivity;
-import com.elysion.elysion.Main_Menu.MainMenuFragment;
-import com.elysion.elysion.Main_Menu.RelateToFragment_OnBack.RootFragment;
-import com.elysion.elysion.Profile.Profile_F;
-import com.elysion.elysion.R;
-import com.elysion.elysion.SimpleClasses.API_CallBack;
-import com.elysion.elysion.SimpleClasses.Fragment_Callback;
-import com.elysion.elysion.SimpleClasses.Fragment_Data_Send;
-import com.elysion.elysion.SimpleClasses.Functions;
-import com.elysion.elysion.SimpleClasses.Variables;
-import com.elysion.elysion.Taged.Taged_Videos_F;
-import com.elysion.elysion.VideoAction.VideoAction_F;
+import com.danikula.videocache.CacheListener;
+import com.danikula.videocache.HttpProxyCacheServer;
 import com.downloader.Error;
 import com.downloader.OnCancelListener;
 import com.downloader.OnDownloadListener;
@@ -86,25 +51,53 @@ import com.downloader.OnStartOrResumeListener;
 import com.downloader.PRDownloader;
 import com.downloader.Progress;
 import com.downloader.request.DownloadRequest;
+import com.elysion.elysion.Comments.Comment_F;
+import com.elysion.elysion.Main_Menu.MainMenuActivity;
+import com.elysion.elysion.Main_Menu.MainMenuFragment;
+import com.elysion.elysion.Main_Menu.RelateToFragment_OnBack.RootFragment;
+import com.elysion.elysion.Profile.Profile_F;
+import com.elysion.elysion.R;
+import com.elysion.elysion.SimpleClasses.API_CallBack;
+import com.elysion.elysion.SimpleClasses.ApiRequest;
+import com.elysion.elysion.SimpleClasses.Callback;
+import com.elysion.elysion.SimpleClasses.Fragment_Callback;
+import com.elysion.elysion.SimpleClasses.Fragment_Data_Send;
+import com.elysion.elysion.SimpleClasses.Functions;
+import com.elysion.elysion.SimpleClasses.SaveVideoBg;
+import com.elysion.elysion.SimpleClasses.TicTic;
+import com.elysion.elysion.SimpleClasses.Variables;
+import com.elysion.elysion.SoundLists.VideoSound_A;
+import com.elysion.elysion.Taged.Taged_Videos_F;
+import com.elysion.elysion.VideoAction.VideoAction_F;
+import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.LoadControl;
 import com.google.android.exoplayer2.PlaybackParameters;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.Timeline;
+import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
+import com.google.android.exoplayer2.extractor.ExtractorsFactory;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.source.TrackGroupArray;
+import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
+import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
+import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.ui.PlayerView;
+import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.upstream.DataSource;
+import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.material.tabs.TabLayout;
 import com.volokh.danylo.hashtaghelper.HashTagHelper;
 
 import org.json.JSONArray;
@@ -112,10 +105,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -333,7 +322,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
                         break;
 
 
-                    case R.id.sound_image_layout:
+                    case R.id.sound_name:
                         if(Variables.sharedPreferences.getBoolean(Variables.islogin,false)) {
                             if(check_permissions()) {
                                 Intent intent = new Intent(getActivity(), VideoSound_A.class);
@@ -692,9 +681,9 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
 
 
-        LinearLayout soundimage = (LinearLayout)layout.findViewById(R.id.sound_image_layout);
+        /*LinearLayout soundimage = (LinearLayout)layout.findViewById(R.id.sound_image_layout);
         Animation sound_animation = AnimationUtils.loadAnimation(context,R.anim.d_clockwise_rotation);
-        soundimage.startAnimation(sound_animation);
+        soundimage.startAnimation(sound_animation);*/
 
         if(Variables.sharedPreferences.getBoolean(Variables.islogin,false))
             if(!Variables.sharedPreferences.getString(Variables.u_id,"0").equals(item.fb_id) )
