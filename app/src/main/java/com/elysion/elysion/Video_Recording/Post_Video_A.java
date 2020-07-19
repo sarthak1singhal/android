@@ -2,7 +2,6 @@ package com.elysion.elysion.Video_Recording;
 
 import android.app.ProgressDialog;
 import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.graphics.Bitmap;
@@ -21,10 +20,14 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.work.Data;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 
 import com.elysion.elysion.Main_Menu.MainMenuActivity;
 import com.elysion.elysion.R;
 import com.elysion.elysion.Services.ServiceCallback;
+import com.elysion.elysion.Services.UploadWorkRequest;
 import com.elysion.elysion.Services.Upload_Service;
 import com.elysion.elysion.SimpleClasses.Functions;
 import com.elysion.elysion.SimpleClasses.Variables;
@@ -134,7 +137,7 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
                     Toast.makeText(Post_Video_A.this, "Please select content language", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Start_Service();
+                Start_Service(v);
 
             }
         });
@@ -238,31 +241,22 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
     }
 
     // this will start the service for uploading the video into database
-    public void Start_Service() {
+    public void Start_Service(View v) {
+        v.setEnabled(false);
 
         serviceCallback = this;
 
-        Upload_Service mService = new Upload_Service(serviceCallback);
-        if (!Functions.isMyServiceRunning(this, mService.getClass())) {
-            Toast.makeText(this, "Video Upload Started", Toast.LENGTH_SHORT).show();
+        Data data = new Data.Builder()
+                .putString("uri", "" + Uri.fromFile(new File(video_path)))
+                .putString("desc", "" + description_edit.getText().toString())
+                .putString("content_language", "" + selectedLanguage)
+                .putString("category", "" + selectedCategory)
+                .build();
+        OneTimeWorkRequest oneTimeWorkRequest = new OneTimeWorkRequest.Builder(UploadWorkRequest.class)
+                .setInputData(data).build();
 
-            Intent mServiceIntent = new Intent(this.getApplicationContext(), mService.getClass());
-            mServiceIntent.setAction("startservice");
-            mServiceIntent.putExtra("uri", "" + Uri.fromFile(new File(video_path)));
-            mServiceIntent.putExtra("desc", "" + description_edit.getText().toString());
-            mServiceIntent.putExtra("content_language", "" + selectedLanguage);
-            mServiceIntent.putExtra("category", "" + selectedCategory);
-            startService(mServiceIntent);
-
-
-            Intent intent = new Intent(this, Upload_Service.class);
-            bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
-            startActivity(new Intent(Post_Video_A.this, MainMenuActivity.class));
-
-        } else {
-            Toast.makeText(this, "Please wait video already in uploading progress", Toast.LENGTH_LONG).show();
-        }
-
+        WorkManager.getInstance(this).enqueue(oneTimeWorkRequest);
+        startActivity(new Intent(Post_Video_A.this, MainMenuActivity.class));
 
     }
 
@@ -308,13 +302,13 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
     protected void onDestroy() {
         super.onDestroy();
 
-        try {
+        /*try {
             if (mConnection != null)
 
                 unbindService(mConnection);
         } catch (Exception e) {
 
-        }
+        }*/
 
     }
 
