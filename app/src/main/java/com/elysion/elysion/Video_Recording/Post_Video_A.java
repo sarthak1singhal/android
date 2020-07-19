@@ -1,15 +1,12 @@
 package com.elysion.elysion.Video_Recording;
 
 import android.app.ProgressDialog;
-import android.content.ComponentName;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.IBinder;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +25,6 @@ import com.elysion.elysion.Main_Menu.MainMenuActivity;
 import com.elysion.elysion.R;
 import com.elysion.elysion.Services.ServiceCallback;
 import com.elysion.elysion.Services.UploadWorkRequest;
-import com.elysion.elysion.Services.Upload_Service;
 import com.elysion.elysion.SimpleClasses.Functions;
 import com.elysion.elysion.SimpleClasses.Variables;
 
@@ -63,25 +59,7 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
 
     String selectedLanguage = "";
     String selectedCategory = "";
-    private ServiceConnection mConnection = new ServiceConnection() {
 
-        @Override
-        public void onServiceConnected(ComponentName className,
-                                       IBinder service) {
-
-            Upload_Service.LocalBinder binder = (Upload_Service.LocalBinder) service;
-            mService = binder.getService();
-
-            mService.setCallbacks(Post_Video_A.this);
-
-
-        }
-
-        @Override
-        public void onServiceDisconnected(ComponentName arg0) {
-
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -228,8 +206,6 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
     @Override
     protected void onStop() {
         super.onStop();
-        Stop_Service();
-
     }
 
 
@@ -261,19 +237,10 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
     }
 
 
-    // this is importance for binding the service to the activity
-    Upload_Service mService;
 
     // when the video is uploading successfully it will restart the appliaction
     @Override
     public void ShowResponce(final String responce) {
-
-        try {
-            if (mConnection != null)
-                unbindService(mConnection);
-        } catch (Exception e) {
-
-        }
 
 
         if (responce.equalsIgnoreCase("Your Video is uploaded Successfully")) {
@@ -313,22 +280,6 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
     }
 
 
-    // this function will stop the the ruuning service
-    public void Stop_Service() {
-
-        serviceCallback = this;
-
-        Upload_Service mService = new Upload_Service(serviceCallback);
-
-        if (Functions.isMyServiceRunning(this, mService.getClass())) {
-            Intent mServiceIntent = new Intent(this.getApplicationContext(), mService.getClass());
-            mServiceIntent.setAction("stopservice");
-            startService(mServiceIntent);
-
-        }
-
-
-    }
 
 
     public void Save_file_in_draft() {
