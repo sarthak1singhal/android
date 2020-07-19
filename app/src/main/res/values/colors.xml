@@ -30,7 +30,7 @@
 
 
     <color name="bottom_panel_color">#4c4c4c</color>
-    <color name="bottom_panel_home_color">#4c4c4c</color>
+    <color name="bottom_panel_home_color">#70000000</color>
 
 
 </resources>
