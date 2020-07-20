@@ -138,7 +138,7 @@ public class MainMenuFragment extends RootFragment implements View.OnClickListen
         TextView  title4=view4.findViewById(R.id.text);
         imageView4.setImageDrawable(getResources().getDrawable(R.drawable.ic_notification_gray));
         imageView4.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
-        title4.setText("Inbox");
+        title4.setText("Notifications");
         title4.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
         tabLayout.getTabAt(3).setCustomView(view4);
 

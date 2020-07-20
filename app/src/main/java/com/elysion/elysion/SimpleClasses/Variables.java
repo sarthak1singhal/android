@@ -93,12 +93,12 @@ public class Variables {
    
    public static String gif_api_key1="giphy_api_key_here";
 
-    public static final String privacy_policy="https://www.privacypolicygenerator.info/live.php?token=";
-
-
-     
+    public static final String privacy_policy="https://docs.google.com/document/d/1A4E_egHnUoZdd5_5v0UBpHzbgogeZKvLuGXH71lQFdw/edit?usp=sharing";
 
      public static String base_url="http://elyisonsocialmedia.com/";
+     
+
+    // public static String base_url="https://tictacdeployment.el.r.appspot.com/";
      public static String domain=base_url+"index.php?p=";
 
 
