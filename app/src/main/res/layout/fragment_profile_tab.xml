@@ -16,7 +16,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:layout_weight="1"
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp"
@@ -31,11 +31,10 @@
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="10dp"
+                     android:layout_marginLeft="20dp"
                     android:text="UserName"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_centerVertical="true"/>
 

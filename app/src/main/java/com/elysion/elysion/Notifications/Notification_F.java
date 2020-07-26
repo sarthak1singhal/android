@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -88,6 +89,8 @@ public class Notification_F extends RootFragment implements View.OnClickListener
             }
         }
     );
+
+        recyclerView.addItemDecoration(new DividerItemDecoration(context, 0));
 
         recyclerView.setAdapter(adapter);
 

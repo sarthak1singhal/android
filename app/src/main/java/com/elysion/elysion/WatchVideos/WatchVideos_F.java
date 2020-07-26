@@ -664,7 +664,7 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
         {
             if(currentPage+1 == data_list.size() - 4)
             {
-           //     Call_Api_For_get_Allvideos(video_id);
+                //Call_Api_For_get_Allvideos(video_id);
             }
         }
 
@@ -704,8 +704,7 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                         privious_player.setPlayWhenReady(false);
                     }
 
-
-                    return true;
+                     return true;
                 }
 
                 @Override

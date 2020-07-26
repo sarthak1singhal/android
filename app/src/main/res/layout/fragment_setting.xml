@@ -17,7 +17,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="55dp"
         android:layout_weight="1"
         app:contentInsetLeft="0dp"
         app:contentInsetStart="0dp"
@@ -27,11 +27,11 @@
             android:layout_height="match_parent"
             android:background="@drawable/d_bottom_gray_line">
             <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:layout_alignParentLeft="true"
                 android:background="@android:color/transparent"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:scaleType="fitStart"
                 android:id="@+id/Goback"
                 android:tint="@color/black"
@@ -41,11 +41,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Privacy and Settings"
-                android:textSize="15dp"
+                android:text="Settings"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+
+                 android:layout_centerVertical="true"
                 android:textColor="@color/black"/>
 
 
@@ -57,7 +58,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
             android:layout_below="@+id/toolbar">
 
             <TextView

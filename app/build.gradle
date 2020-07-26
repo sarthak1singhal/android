@@ -9,7 +9,7 @@ android {
         applicationId "com.elysion.elysion"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 11
+        versionCode 12
         versionName "2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -83,7 +83,6 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.airbnb.android:lottie:2.7.0'
     implementation 'com.danikula:videocache:2.7.1'
-    //implementation 'com.github.yangjie10930:EpMedia:v0.9.5'
     implementation 'com.felipecsl.asymmetricgridview:library:2.0.1'
     implementation 'com.wonderkiln:camerakit:0.13.0'
 

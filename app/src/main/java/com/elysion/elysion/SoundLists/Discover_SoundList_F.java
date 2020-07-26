@@ -91,7 +91,7 @@ public class Discover_SoundList_F extends RootFragment implements Player.EventLi
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-            if (search_edit.getText().toString().length() > 0) {
+            if (search_edit.getText().toString().length() >1) {
                 search_btn.setVisibility(View.VISIBLE);
             } else {
                 search_btn.setVisibility(View.GONE);
@@ -112,14 +112,14 @@ public class Discover_SoundList_F extends RootFragment implements Player.EventLi
         public boolean onKey(View v, int keyCode, KeyEvent event) {
             if (event.getAction() == KeyEvent.ACTION_DOWN) {
                 if (keyCode == KeyEvent.KEYCODE_ENTER) {
-                   /* if(menu_pager!=null){
-                        menu_pager.removeAllViews();
-                    }*/
-                    datalist.clear();
-                    adapter.notifyDataSetChanged();
-                    Call_Api_For_get_allsound();
 
-                    hideKeyboard(getActivity());
+                 if(search_edit.getText().toString().length() >1){
+                     datalist.clear();
+                     adapter.notifyDataSetChanged();
+                     Call_Api_For_get_allsound();
+
+                     hideKeyboard(getActivity());
+                 }
                 }
             }
             return false;

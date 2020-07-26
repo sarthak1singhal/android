@@ -21,7 +21,9 @@ import com.elysion.elysion.SimpleClasses.Variables;
 
 import java.util.ArrayList;
 
-
+/**
+ * Created by AQEEL on 3/20/2018.
+ */
 
 public class Discover_Adapter extends RecyclerView.Adapter<Discover_Adapter.CustomViewHolder > implements Filterable {
     public Context context;

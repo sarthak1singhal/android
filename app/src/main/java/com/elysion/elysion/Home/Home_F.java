@@ -733,7 +733,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
         iv.setLayoutParams(lp);
         if(item.liked.equals("1"))
         iv.setImageDrawable(getResources().getDrawable(
-                R.drawable.ic_like));
+                R.drawable.ic_like2));
         else
             iv.setImageDrawable(getResources().getDrawable(
                     R.drawable.sasa));
@@ -1390,8 +1390,6 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
 
 
 
-
-    // Bottom all the function and the Call back listener of the Expo player
     @Override
     public void onTimelineChanged(Timeline timeline, @Nullable Object manifest, int reason) {
 

@@ -531,8 +531,7 @@ public class Edit_Profile_F extends RootFragment implements View.OnClickListener
                         SharedPreferences.Editor editor = Variables.sharedPreferences.edit();
 
                         String u_name=username_edit.getText().toString();
-                        if(!u_name.contains("@"))
-                        u_name="@"+u_name;
+
 
                         editor.putString(Variables.u_name,u_name);
                         editor.putString(Variables.f_name, firstname_edit.getText().toString());

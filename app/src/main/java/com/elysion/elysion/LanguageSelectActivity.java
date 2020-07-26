@@ -75,6 +75,8 @@ public class LanguageSelectActivity extends Activity implements LanguageAdapter.
         }
     }
 
+
+
     @Override
     public void onLanguageSelected(String language, int position) {
         SharedPreferences.Editor editor = Variables.sharedPreferences.edit();
