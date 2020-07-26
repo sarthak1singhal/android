@@ -79,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
+                    android:inputType="textCapSentences|textMultiLine"
                     android:backgroundTint="@color/transparent"
                     android:hint="Description"
                     android:textColor="@color/black" />
@@ -88,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:backgroundTint="@color/transparent"
-                    android:hint="Select category"
+                    android:hint="Content Category"
                     android:textColor="@color/black" />
 
                 <Spinner
@@ -106,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:backgroundTint="@color/transparent"
-                    android:hint="Select Content language"
+                    android:hint="Content language"
                     android:textColor="@color/black" />
 
                 <Spinner

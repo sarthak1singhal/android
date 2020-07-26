@@ -72,9 +72,9 @@ public class Discover_F extends RootFragment implements View.OnClickListener {
 
         adapter=new Discover_Adapter(context, datalist, new Discover_Adapter.OnItemClickListener() {
             @Override
-            public void onItemClick(ArrayList<Home_Get_Set> datalist, int postion) {
+            public void onItemClick(ArrayList<Home_Get_Set> mdataList, int postion) {
 
-                OpenWatchVideo(postion,datalist);
+                OpenWatchVideo(postion,mdataList);
 
             }
         });

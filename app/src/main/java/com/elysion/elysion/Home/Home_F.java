@@ -819,6 +819,7 @@ public class Home_F extends RootFragment  implements Player.EventListener, Fragm
             action="0";
             home_get_set.like_count=""+(Integer.parseInt(home_get_set.like_count) -1);
         }else {
+
             action="1";
             home_get_set.like_count=""+(Integer.parseInt(home_get_set.like_count) +1);
         }

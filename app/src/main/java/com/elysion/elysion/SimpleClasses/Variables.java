@@ -6,10 +6,6 @@ import android.os.Environment;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-/**
- * Created by AQEEL on 2/15/2019.
- */
-
 public class Variables {
 
 
@@ -36,7 +32,6 @@ public class Variables {
 
     public static String gallery_trimed_video=app_folder + "gallery_trimed_video.mp4";
     public static String gallery_resize_video=app_folder + "gallery_resize_video.mp4";
-
 
 
     public static SharedPreferences sharedPreferences;
@@ -82,6 +77,7 @@ public class Variables {
     public static final boolean is_remove_ads=true;
 
 
+
     public final static int permission_camera_code=786;
     public final static int permission_write_data=788;
     public final static int permission_Read_data=789;
@@ -89,19 +85,15 @@ public class Variables {
     public final static int Pick_video_from_gallery=791;
 
 
-
-   
-   public static String gif_api_key1="giphy_api_key_here";
+    public static String gif_api_key1="giphy_api_key_here";
 
     public static final String privacy_policy="https://docs.google.com/document/d/1A4E_egHnUoZdd5_5v0UBpHzbgogeZKvLuGXH71lQFdw/edit?usp=sharing";
-
-     //public static String base_url="http://elyisonsocialmedia.com/";
-     
-
-     public static String base_url="https://tictacdeployment.el.r.appspot.com/";
-     public static String domain=base_url+"index.php?p=";
+    //public static String base_url="http://elyisonsocialmedia.com/";
 
 
+    public static String base_url="https://juneapp.in/API/";
+
+    public static String domain=base_url+"index.php?p=";
 
     public static final String SignUp =domain+"signup";
     public static final String uploadVideo =domain+"uploadVideo";
@@ -130,9 +122,6 @@ public class Variables {
     public static final String getNotifications=domain+"getNotifications";
     public static final String getVerified=domain+"getVerified";
     public static final String updateLanguage = domain + "post_language";
-
-
     public static final String selectedLanguage = "selected_language";
-
 
 }

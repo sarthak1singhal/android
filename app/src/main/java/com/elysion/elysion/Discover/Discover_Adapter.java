@@ -21,15 +21,14 @@ import com.elysion.elysion.SimpleClasses.Variables;
 
 import java.util.ArrayList;
 
-/**
- * Created by AQEEL on 3/20/2018.
- */
+
 
 public class Discover_Adapter extends RecyclerView.Adapter<Discover_Adapter.CustomViewHolder > implements Filterable {
     public Context context;
 
     ArrayList<Discover_Get_Set> datalist;
     ArrayList<Discover_Get_Set> datalist_filter;
+    String hashTag;
 
     public interface OnItemClickListener {
         void onItemClick(ArrayList<Home_Get_Set> video_list, int postion);
@@ -42,6 +41,8 @@ public class Discover_Adapter extends RecyclerView.Adapter<Discover_Adapter.Cust
         datalist = arrayList;
         datalist_filter=arrayList;
         this.listener = listener;
+        this.hashTag =  "dsdsd";
+
     }
 
 

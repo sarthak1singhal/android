@@ -69,6 +69,7 @@
                     android:hint="Leave a comment..."
                     android:textSize="14dp"
                     android:id="@+id/message_edit"
+                    android:inputType="textCapSentences|textMultiLine"
                     android:textColorHint="@color/darkgray"
                     android:textColor="@color/black"
                     android:layout_toLeftOf="@+id/send_btn_layout"

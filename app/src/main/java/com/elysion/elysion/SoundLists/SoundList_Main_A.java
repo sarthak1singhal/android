@@ -55,6 +55,7 @@ public class SoundList_Main_A extends AppCompatActivity implements View.OnClickL
         }
     }
 
+    
 
 
     class ViewPagerAdapter extends FragmentPagerAdapter {

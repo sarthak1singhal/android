@@ -108,6 +108,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 
 /**
@@ -257,10 +258,14 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
 
 
     }
+    HashMap<String,String> map=new HashMap<String, String>();//Creating HashMap
 
     public void Parse_data(String responce) {
-
-        data_list = new ArrayList<>();
+        int isAdapter = 0;
+        if(data_list.size()!=0)
+        {
+            isAdapter = 1;
+        }
 
         try {
             JSONObject jsonObject = new JSONObject(responce);
@@ -303,11 +308,20 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
                     item.thum = itemdata.optString("thum");
                     item.created_date = itemdata.optString("created");
 
-                    data_list.add(item);
+                    if (!map.containsKey(itemdata.optString("id"))) {
+                        map.put(itemdata.optString("id"), "");
+                        data_list.add(item);
+                    }
                 }
 
-                Set_Adapter();
+                if(isAdapter == 0)
+                    Set_Adapter();
+                else
+                {
 
+                    adapter.notifyDataSetChanged();
+
+                }
             } else {
                 Toast.makeText(context, "" + jsonObject.optString("msg"), Toast.LENGTH_SHORT).show();
             }
@@ -614,7 +628,6 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
         if (fullyCached) {
             //p_bar.setVisibility(View.GONE);
             String proxyUrl = proxy.getProxyUrl(item.video_url);
-            Log.d("PROXY", "Use proxy url " + proxyUrl + " instead of original url ");
 
             SimpleExoPlayer player2 = newSimpleExoPlayer();
 
@@ -646,6 +659,16 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
         }
         if (currentPage + 1 != data_list.size())
             nextURL = data_list.get(currentPage + 1).video_url;
+
+        if(data_list.size()>4)
+        {
+            if(currentPage+1 == data_list.size() - 4)
+            {
+           //     Call_Api_For_get_Allvideos(video_id);
+            }
+        }
+
+
 
 
         final RelativeLayout mainlayout = layout.findViewById(R.id.mainlayout);
@@ -729,11 +752,6 @@ public class WatchVideos_F extends AppCompatActivity implements Player.EventList
 
 
 
-
-
-       /* LinearLayout soundimage = (LinearLayout)layout.findViewById(R.id.sound_image_layout);
-        Animation aniRotate = AnimationUtils.loadAnimation(context,R.anim.d_clockwise_rotation);
-        soundimage.startAnimation(aniRotate);*/
 
         if (Variables.sharedPreferences.getBoolean(Variables.islogin, false))
             if (!Variables.sharedPreferences.getString(Variables.u_id, "0").equals(item.fb_id))

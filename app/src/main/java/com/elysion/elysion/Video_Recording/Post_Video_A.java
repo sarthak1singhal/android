@@ -108,10 +108,15 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
             @Override
             public void onClick(View v) {
 
+                if(selectedCategory.equals("Select the content category")){
+                    Toast.makeText(Post_Video_A.this, "Please select a category", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
 
                 //progressDialog.show();
                 if (selectedCategory.isEmpty()) {
-                    Toast.makeText(Post_Video_A.this, "Please select category", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Post_Video_A.this, "Please select a category", Toast.LENGTH_SHORT).show();
                     return;
                 } else if (selectedLanguage.isEmpty()) {
                     Toast.makeText(Post_Video_A.this, "Please select content language", Toast.LENGTH_SHORT).show();
@@ -147,6 +152,8 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
         language.put("ಕನ್ನಡ","kannada");
         language.put("বাংলা","bengali");
 
+
+        categoryList.add("Select the content category");
 
         categoryList.add("Comedy");
         categoryList.add("Travel");
@@ -224,6 +231,7 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback, 
 
         serviceCallback = this;
 
+        Toast.makeText(this,"Video upload started", Toast.LENGTH_SHORT).show();
         Data data = new Data.Builder()
                 .putString("uri", "" + Uri.fromFile(new File(video_path)))
                 .putString("desc", "" + description_edit.getText().toString())

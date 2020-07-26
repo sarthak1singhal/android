@@ -15,6 +15,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -64,6 +65,7 @@ public class UploadWorkRequest extends Worker {
         super(context, workerParams);
         this.context = context;
         sharedPreferences = context.getSharedPreferences(Variables.pref_name, MODE_PRIVATE);
+
     }
 
     private static byte[] loadFile(File file) throws IOException {
@@ -95,6 +97,7 @@ public class UploadWorkRequest extends Worker {
     public Result doWork() {
 
         showNotification();
+
         String videoUri = getInputData().getString("uri");
         Uri uri = Uri.parse(videoUri);
         String description = getInputData().getString("desc");
@@ -142,7 +145,13 @@ public class UploadWorkRequest extends Worker {
 
         try {
             parameters.put("fb_id", sharedPreferences.getString(Variables.u_id, ""));
-            parameters.put("sound_id", Variables.Selected_sound_id);
+            if(Variables.Selected_sound_id == null)
+                parameters.put("sound_id", "0");
+            else if(Variables.Selected_sound_id.equals("null"))
+                parameters.put("sound_id", "0");
+            else
+                parameters.put("sound_id", Variables.Selected_sound_id);
+
             parameters.put("description", description);
             parameters.put("content_language", content_language);
             parameters.put("category", category);
@@ -153,6 +162,7 @@ public class UploadWorkRequest extends Worker {
             JSONObject vidoefiledata = new JSONObject();
             vidoefiledata.put("file_data", video_base64);
             parameters.put("videobase64", vidoefiledata);
+
 
 
             JSONObject imagefiledata = new JSONObject();
@@ -203,6 +213,7 @@ public class UploadWorkRequest extends Worker {
 
         try {
             JSONObject response = future.get(); // this will block
+            int k= 0;
         } catch (InterruptedException e) {
             // exception handling
             e.printStackTrace();
@@ -210,11 +221,10 @@ public class UploadWorkRequest extends Worker {
             // exception handling
             e.printStackTrace();
         } finally {
+
             notificationManager.cancel(101);
+
         }
-
-
-        /****************************/
 
 
         return Result.success();
@@ -314,6 +324,7 @@ public class UploadWorkRequest extends Worker {
 
     private void stopNotification() {
         if (notificationManager != null) {
+
             notificationManager.cancel(101);
         }
     }

@@ -407,6 +407,9 @@ public class Login_A extends Activity {
             parameters.put("device",Variables.device);
 
 
+
+            int j = 0;
+            Log.d("dataa", parameters.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
